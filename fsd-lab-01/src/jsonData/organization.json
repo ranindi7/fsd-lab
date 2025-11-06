@@ -1,0 +1,224 @@
+[
+  {
+    "id": 1,
+    "role": "CEO/Chair of Board",
+    "name": "Jo-Anne Sinclair",
+    "roleDescription": "The chief executive officer, the highest-ranking person in a company or institution, ultimately responsible for making managerial decisions."
+  },
+  {
+    "id": 2,
+    "role": "COO/VP Operations",
+    "name": "Jackson Smith",
+    "roleDescription": "The chief operating officer (COO) is responsible for executing and implementing the operational directives set by the CEO and the board of directors."
+  },
+  {
+    "id": 3,
+    "role": "CFO/VP Administration",
+    "name": "Susan Thomas",
+    "roleDescription": "A chief financial officer with responsibility for the financial affairs of a corporation. The VP of Administration directs administrative functions in line with industry standards, regulatory requirements, and company objectives."
+  },
+  {
+    "id": 4,
+    "role": "VP Client Services",
+    "name": "Richa Kaur",
+    "roleDescription": "Responsible for the Consumer and Commercial Banking divisions, overseeing lending, investing, risk management, marketing, and technology to help customers meet their financial goals."
+  },
+  {
+    "id": 5,
+    "role": "CIO",
+    "name": "Josee Benjamin",
+    "roleDescription": "The most senior executive in the bank responsible for information technology and computer systems that support bank goals."
+  },
+  {
+    "id": 6,
+    "role": "VP Sales & Marketing",
+    "name": "Vincent Grey",
+    "roleDescription": "Responsible for the overall strategic marketing plans of the organization to attract potential customers and retain existing ones."
+  },
+  {
+    "id": 7,
+    "role": "Director Financial and Audit Svcs",
+    "name": "Rupa Kharki (she/her/hers)",
+    "roleDescription": "Ensures the company is conducting business in compliance with laws, regulations, professional standards, and accepted business practices."
+  },
+  {
+    "id": 8,
+    "role": "Director Human Resources",
+    "name": "Xun Kuang",
+    "roleDescription": "Responsible for organizational development, recruitment, employment law compliance, performance management, employee relations, and compensation/benefits."
+  },
+  {
+    "id": 9,
+    "role": "Director Legal Services/General Counsel",
+    "name": "Stien Pedersen",
+    "roleDescription": "The senior executive managing legal affairs for the company."
+  },
+  {
+    "id": 10,
+    "role": "Director Information Technology",
+    "name": "Sandra Bear",
+    "roleDescription": "Manages IT infrastructure, operations, and services to enable access to data and technology for the organization."
+  },
+  {
+    "id": 11,
+    "role": "Director Information Security and CISSO",
+    "name": "Gus Blue",
+    "roleDescription": "The chief information security officer responsible for establishing and maintaining the organization’s information security vision, strategy, and program."
+  },
+  {
+    "id": 12,
+    "role": "Director Accounting",
+    "name": "Sam Kong",
+    "roleDescription": "Responsible for analysis and reconciliation of accounts, and for developing and implementing accounting policies, procedures, and controls."
+  },
+  {
+    "id": 13,
+    "role": "Director Physical Security",
+    "name": "Valentine Smith",
+    "roleDescription": "Responsible for identifying, assessing, and integrating physical security operations, technology, and policy solutions."
+  },
+  {
+    "id": 14,
+    "role": "Director Facilities",
+    "name": "Mariya Kaperski",
+    "roleDescription": "Oversees facilities operations, ensuring safe and efficient management of buildings, equipment, and physical resources."
+  },
+  {
+    "id": 15,
+    "role": "Manager, Business Continuity and Disaster Recovery",
+    "name": "Abd al-Hamid Alami",
+    "roleDescription": "Develops, maintains, and implements business continuity and disaster recovery strategies, risk assessments, and procedures."
+  },
+  {
+    "id": 16,
+    "role": "Manager, Internal Audit",
+    "name": "Victoria Gray",
+    "roleDescription": "Performs full audits including risk management, control management, and assessing financial reliability to ensure compliance."
+  },
+  {
+    "id": 17,
+    "role": "Chief Architect",
+    "name": "Cheryl Guru",
+    "roleDescription": "Leads system architecture design across the organization, ensuring alignment of IT systems with business objectives."
+  },
+  {
+    "id": 18,
+    "role": "Manager, Security Architecture",
+    "name": "Jean Ngoy",
+    "roleDescription": "Designs and oversees implementation of security measures for information systems to resist threats and ensure compliance with security policies."
+  },
+  {
+    "id": 19,
+    "role": "Solution Architect, Online Banking",
+    "name": "Kris Gold",
+    "roleDescription": "Responsible for designing technical solutions for online banking platforms to align with business and customer needs."
+  },
+  {
+    "id": 20,
+    "role": "Manager, Application Solutions",
+    "name": "Isaac Smith",
+    "roleDescription": "Oversees development and implementation of application solutions that meet organizational needs."
+  },
+  {
+    "id": 21,
+    "role": "Lead Developer, Online Banking",
+    "name": "Payton Frost",
+    "roleDescription": "Leads the development team for online banking systems, ensuring delivery of secure and user-friendly applications."
+  },
+  {
+    "id": 22,
+    "role": "Manager, Operational Risk",
+    "name": "Samantha Nettle",
+    "roleDescription": "Monitors, measures, and manages operational and economic risk exposures, placing appropriate controls in place."
+  },
+  {
+    "id": 23,
+    "role": "Manager, Vendor Relations",
+    "name": "Yolanda Ferreira",
+    "roleDescription": "Responsible for managing relationships with vendors and ensuring supplier performance meets organizational standards."
+  },
+  {
+    "id": 24,
+    "role": "Manager, Purchasing",
+    "name": "Samir Hassan",
+    "roleDescription": "Leads procurement efforts to maximize value from suppliers and support business objectives."
+  },
+  {
+    "id": 25,
+    "role": "Manager, Communications",
+    "name": "Yuna Aikawa",
+    "roleDescription": "Oversees corporate communications, ensuring consistent messaging internally and externally."
+  },
+  {
+    "id": 26,
+    "role": "Manager Customer Experience and Community Eng.",
+    "name": "Jonathan Carberry",
+    "roleDescription": "Improves customer experiences and fosters loyalty through high-quality interactions at each stage."
+  },
+  {
+    "id": 27,
+    "role": "Manager of Sales",
+    "name": "Roland Wei",
+    "roleDescription": "Leads a sales team by providing guidance, training, setting quotas, creating sales plans, and analyzing performance."
+  },
+  {
+    "id": 28,
+    "role": "Manager, Marketing",
+    "name": "Pran Singh",
+    "roleDescription": "Develops and executes strategic marketing plans to attract potential customers and retain existing ones."
+  },
+  {
+    "id": 29,
+    "role": "Business Analyst, Online Banking",
+    "name": "Linda Analyst",
+    "roleDescription": "Analyzes business needs and translates them into system requirements for online banking services."
+  },
+  {
+    "id": 30,
+    "role": "Manager, Contract Management",
+    "name": "Esra Sedge",
+    "roleDescription": "Oversees the creation, negotiation, and compliance of contracts with vendors and clients."
+  },
+  {
+    "id": 31,
+    "role": "Manager, Compliance Management",
+    "name": "Pranee Tan",
+    "roleDescription": "Ensures the organization complies with all applicable laws, regulations, and policies."
+  },
+  {
+    "id": 32,
+    "role": "Manager IT End User Service Desk",
+    "name": "Karmen Spruce",
+    "roleDescription": "Manages daily service desk operations, representing the team across the organization, and ensuring continuous improvement."
+  },
+  {
+    "id": 33,
+    "role": "Manager IT End User Computing",
+    "name": "Haydar Katirci",
+    "roleDescription": "Provides day-to-day operational support for end-user computing services organization-wide."
+  },
+  {
+    "id": 34,
+    "role": "Manager IT Telecom and Infrastructure",
+    "name": "Jill Harkness",
+    "roleDescription": "Responsible for daily operations of infrastructure and telecom, ensuring business IT needs are met."
+  },
+  {
+    "id": 35,
+    "role": "Manager, Data Center and Hosting Services",
+    "name": "Tim Morrison",
+    "roleDescription": "Oversees datacenter operations, manages cloud services contracts, and ensures high availability of data."
+  },
+  {
+    "id": 36,
+    "role": "Manager of IT Risk Management",
+    "name": "Aleksandr Milosevic",
+    "roleDescription": "Identifies, assesses, and mitigates risks that could jeopardize assets, profitability, or organizational stability."
+  },
+  {
+    "id": 37,
+    "role": "Manager IT, project management office",
+    "name": "Jim Wingnut",
+    "roleDescription": "Leads the IT Project Management Office (PMO), ensuring projects are delivered on time, within scope, and aligned with strategic goals."
+  }
+]

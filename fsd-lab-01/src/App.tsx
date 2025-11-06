@@ -1,17 +1,21 @@
+import { Routes, Route } from "react-router-dom";
+
 import './App.css'
-import Header from './components/headerComponent/Header'
-import Footer from './components/footerComponent/Footer'
-import EmployeeData from './components/employeeDataComponent/employeeData'
+import EmployeeData from './components/pages/employeeData'
+import { Layout } from "./components/layout/Layout";
+import { OrganizationData } from "./components/pages/organizationData";
+import organizationJsonData from "./jsonData/organization.json";
 
 function App() {
 
-
   return (
-    <>
-      <Header />
-      <EmployeeData />
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<EmployeeData />} />
+        <Route path="employees" element={<EmployeeData />} />
+        <Route path="organization" element={<OrganizationData rolesList={organizationJsonData} />} />
+      </Route>
+    </Routes>
   )
 }
 

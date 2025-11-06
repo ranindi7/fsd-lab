@@ -1,4 +1,5 @@
-import logo from "../../assets/logo.svg";
+import logo from "../../../assets/logo.svg";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
     return (
@@ -8,8 +9,8 @@ export default function Header() {
                     <img src={logo} alt="Pixell River Logo" height="100px"/>
                 </div>
                 <ul>
-                    <li><a href="#">Employee</a></li>
-                    <li><a href="#">Organization</a></li>
+                    <li><NavLink to="/employees">Employees</NavLink></li>
+                    <li><NavLink to="/organization">Organization</NavLink></li>
                 </ul>
             </nav>
 
