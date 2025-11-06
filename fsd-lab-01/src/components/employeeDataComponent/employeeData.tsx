@@ -1,5 +1,5 @@
 import employeeData from "../../employeeData/employees.json";
-import type { Department } from "../../types/employeeInterface";
+import type { Employee } from "../../types/employeeInterface";
 
 export default function EmployeeData() {
     return(
@@ -7,11 +7,11 @@ export default function EmployeeData() {
             <h1>Employee Directory</h1>
 
             <div>
-                {employeeData.map((dept: Department) => (
+                {employeeData.map((emp: Employee) => (
                 <div className="employeesDisplay">
-                    <h2>{dept.department}</h2>
+                    <h2>{emp.department}</h2>
                     <ul>
-                        {dept.employees.map((emp) => (
+                        {emp.employees.map((emp) => (
                             <li>{emp}</li>
                         ))}
                     </ul>
