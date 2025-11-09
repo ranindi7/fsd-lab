@@ -1,4 +1,4 @@
-import type { Organization } from "../../types/organizationInterface";
+import type { Organization } from "../../types";
 import { RoleDescriptionDisplay } from "../roleDescriptionDisplay/roleDescriptionDisplay";
 
 export function OrganizationData({

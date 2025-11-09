@@ -1,19 +1,22 @@
 import { useState } from "react";
 import employeeData from "../../jsonData/employees.json";
-import type { Employee } from "../../types/employeeInterface";
+import type { Employee } from "../../types";
+import { useEntryForm } from "../../hooks/useEntryForm";
 
 export default function EmployeeData() {
     const[employeeInfo, setEmployeeInfo] = useState<Employee[]>(employeeData)
 
-    const[newEmployeeName, setNewEmployeeName] = useState("");
-    const[selectedDept, setSelectedDept] = useState("");
+    const { fields, setFields, handleChange } = useEntryForm({
+        newEmployeeName: "",
+        selectedDept: "",
+    });
     const[nameError, setNameError] = useState("");
     const[deptError, setDeptError] = useState("");
 
     const handleAddEmployee = (e: React.FormEvent) => {
         e.preventDefault();
 
-        if (newEmployeeName.trim().length < 3) {
+        if (fields.newEmployeeName.trim().length < 3) {
             setNameError("Name must have at least 3 characters.");
             return;
         } else {
@@ -21,7 +24,7 @@ export default function EmployeeData() {
         }
 
 
-        if (!selectedDept) {
+        if (!fields.selectedDept) {
             setDeptError("Please select a department.");
             return;
         } else {
@@ -29,18 +32,17 @@ export default function EmployeeData() {
         }
 
         const updatedData = employeeInfo.map((dept) => {
-            if (dept.department === selectedDept) {
+            if (dept.department === fields.selectedDept) {
                 return {
                     ...dept,
-                    employees: [...dept.employees, newEmployeeName.trim()]
+                    employees: [...dept.employees, fields.newEmployeeName .trim()]
                 }
             } 
             return dept;
         });
 
         setEmployeeInfo(updatedData);
-        setNewEmployeeName("");
-        setSelectedDept("");
+        setFields({ newEmployeeName: "", selectedDept: "" });
     }
 
     return(
@@ -68,11 +70,9 @@ export default function EmployeeData() {
                         <label>Name: </label>
                         <input
                             type="text"
-                            value={newEmployeeName}
-                            onChange={(e) => {
-                                setNewEmployeeName(e.target.value);
-                                if (e.target.value.trim().length >= 3) setNameError("")
-                            }}
+                            name="newEmployeeName"
+                            value={fields.newEmployeeName}
+                            onChange={handleChange}
                         />   
                         {nameError && <p style={{ color: "red" }}>{nameError}</p>}
                     </div>
@@ -81,13 +81,9 @@ export default function EmployeeData() {
                     <div>
                     <label>Department: </label>
                         <select
-                            value={selectedDept}
-                            onChange={(e) => {
-                                setSelectedDept(e.target.value);
-                                if (e.target.value) {
-                                    setDeptError("")
-                                }
-                            }}
+                            value={fields.selectedDept}
+                            name="selectedDept"
+                            onChange={handleChange}
                         >
                             <option value="">Select Department</option>
                             {employeeData.map((dept) => (
