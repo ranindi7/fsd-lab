@@ -5,8 +5,7 @@ export function OrganizationData({
   rolesList
 }: {
   rolesList: Organization[];
-}) 
-{
+}) {
     return(
         <>
         <main>
