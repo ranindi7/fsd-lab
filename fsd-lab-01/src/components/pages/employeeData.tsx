@@ -6,30 +6,16 @@ import { useEntryForm } from "../../hooks/useEntryForm";
 export default function EmployeeData() {
     const[employeeInfo, setEmployeeInfo] = useState<Employee[]>(employeeData)
 
-    const { fields, setFields, handleChange } = useEntryForm({
+    const { fields, setFields, handleChange, errors, validate } = useEntryForm({
         newEmployeeName: "",
         selectedDept: "",
     });
-    const[nameError, setNameError] = useState("");
-    const[deptError, setDeptError] = useState("");
 
     const handleAddEmployee = (e: React.FormEvent) => {
         e.preventDefault();
 
-        if (fields.newEmployeeName.trim().length < 3) {
-            setNameError("Name must have at least 3 characters.");
+        if(!validate()) 
             return;
-        } else {
-            setNameError("")
-        }
-
-
-        if (!fields.selectedDept) {
-            setDeptError("Please select a department.");
-            return;
-        } else {
-            setDeptError("")
-        }
 
         const updatedData = employeeInfo.map((dept) => {
             if (dept.department === fields.selectedDept) {
@@ -74,7 +60,7 @@ export default function EmployeeData() {
                             value={fields.newEmployeeName}
                             onChange={handleChange}
                         />   
-                        {nameError && <p style={{ color: "red" }}>{nameError}</p>}
+                        {errors.newEmployeeName && <p style={{ color: "red" }}>{errors.newEmployeeName}</p>}
                     </div>
 
 
@@ -92,7 +78,7 @@ export default function EmployeeData() {
                             </option>
                             ))}
                         </select>
-                        {deptError && <p style={{ color: "red" }}>{deptError}</p>}
+                        {errors.selectedDept && <p style={{ color: "red" }}>{errors.selectedDept}</p>}
                     </div>
 
                     <button type="submit">Add Employee</button>
