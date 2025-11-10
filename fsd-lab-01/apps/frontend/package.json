@@ -1,5 +1,5 @@
 {
-  "name": "fsd-lab-01",
+  "name": "@fsd-lab-01/frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",

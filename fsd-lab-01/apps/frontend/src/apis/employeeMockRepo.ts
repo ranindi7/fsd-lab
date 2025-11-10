@@ -1,4 +1,6 @@
-[
+import type { Employee } from "../types";
+
+export const employeeData: Employee[] = [
   {
     "department": "Administration",
     "employees": [

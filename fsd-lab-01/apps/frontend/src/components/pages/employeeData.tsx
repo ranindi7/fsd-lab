@@ -1,10 +1,11 @@
 import { useState } from "react";
-import employeeData from "../../jsonData/employees.json";
+import { employeeData } from "../../apis/employeeMockRepo";
 import type { Employee } from "../../types";
 import { useEntryForm } from "../../hooks/useEntryForm";
+import { fetchEmployees, addEmployee } from "../../apis/employeeRepo";
 
 export default function EmployeeData() {
-    const[employeeInfo, setEmployeeInfo] = useState<Employee[]>(employeeData)
+    const[employeeInfo, setEmployeeInfo] = useState<Employee[]>(fetchEmployees())
 
     const { fields, setFields, handleChange, errors, validate } = useEntryForm({
         newEmployeeName: "",
@@ -17,17 +18,9 @@ export default function EmployeeData() {
         if(!validate()) 
             return;
 
-        const updatedData = employeeInfo.map((dept) => {
-            if (dept.department === fields.selectedDept) {
-                return {
-                    ...dept,
-                    employees: [...dept.employees, fields.newEmployeeName .trim()]
-                }
-            } 
-            return dept;
-        });
+        addEmployee(fields.selectedDept, fields.newEmployeeName.trim());
 
-        setEmployeeInfo(updatedData);
+        setEmployeeInfo(fetchEmployees());
         setFields({ newEmployeeName: "", selectedDept: "" });
     }
 
